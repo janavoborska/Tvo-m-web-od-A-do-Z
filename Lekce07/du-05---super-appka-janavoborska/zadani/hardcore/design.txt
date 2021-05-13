@@ -1,0 +1,22 @@
+**Soubory HTML a CSS vytvoř v kořenovém adresáři (o dvě úrovně výš než tento soubor).**
+
+BARVY
+šedá: #e5e5e5 (pozadí)
+světle fialová: #48418e (navigace, primární tlačítko, nadpisy služeb, patička)
+tmavě fialová: #25133d (výchozí barva gradientu, hover primárního tlačítka)
+nachová: #aa5477 (koncová barva gradientu)
+
+Generátor gradientů: https://cssgradient.io/
+to right, #25133d 25%, #aa5477 100%
+
+PÍSMO
+Source Sans Pro
+https://fonts.google.com/specimen/Source+Sans+Pro?query=source+Sans
+- light 300 (slogan)
+- bold 700 (logo, nadpisy)
+- regular 400 (vše ostatní)
+výška řádku 1.5
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+BONUSOVÁ VÝZVA
+Změň barvu ikon na tmavě fialovou.

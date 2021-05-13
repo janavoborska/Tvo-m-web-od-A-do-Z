@@ -1,0 +1,6 @@
+Ahoj Jano, těm ikonám je třeba natavit šířku. Buď přímo na značku <img> atributem width. Nebo pomocí CSS vlastnosti width.
+Doporučuju velikost 50px.
+Pak už je krásně vycentruješ přes text-align (na rodiče!).
+
+https://www.vzhurudolu.cz/prirucka/css3-box-sizing
+

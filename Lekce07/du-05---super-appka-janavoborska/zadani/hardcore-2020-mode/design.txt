@@ -1,0 +1,23 @@
+**Soubory HTML a CSS vytvoř v kořenovém adresáři.**
+
+BARVY
+šedá: #e5e5e5
+světle fialová: #48418e
+tmavě fialová: #25133d
+nachová: #aa5477
+
+Generátor gradientů: https://cssgradient.io/
+zleva do prava tmavě fialová do čtvrtiny, pak nachová
+
+PÍSMO
+Source Sans Pro
+- light 300
+- bold 700
+- regular 400
+výška řádku 1,5
+box-shadow okolo stránky, rozptyl 20px
+
+Soubor SuperAppka-responsive.webm otevři v Chromu.
+
+BONUSOVÁ VÝZVA
+Změň barvu ikon na tmavě fialovou.

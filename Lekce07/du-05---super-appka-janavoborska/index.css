@@ -1,0 +1,287 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+/*
+    BARVY
+    šedá: #e5e5e5 (pozadí body)
+    světle fialová: #48418e (navigace, primární tlačítko, nadpisy služeb, patička)
+    tmavě fialová: #25133d (výchozí barva gradientu, hover primárního tlačítka)
+    nachová: #aa5477 (koncová barva gradientu)
+    gradient v záhlaví: linear-gradient(to right, #25133d 25%, #aa5477 100%)
+
+    PÍSMO
+    Source Sans Pro
+    https://fonts.google.com/specimen/Source+Sans+Pro?query=source+Sans
+    - light 300 (slogan)
+    - bold 700 (logo, nadpisy)
+    - regular 400 (vše ostatní)
+
+    HOVER EFEKT
+    navigace: prohodit barvu písma s barvou pozadí
+    primární tlačítko: ohraničení světle fialovou, pozadí tmavě fialovou
+    sekundární tlačítko: ohraničení i pozadí světle fialovou
+
+    BONUSOVÁ VÝZVA
+    Změň barvu ikon na tmavě fialovou.
+*/
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #e5e5e5;
+    box-shadow: 0 0 20px 0.2;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+}
+
+.container {
+    /* obsah stránky je omezený do pruhu širokého 1200px */
+    max-width: 1200px;
+    
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    /* stránka je vycentrovaná */
+}
+
+/* ----- zde začni psát vlastní CSS ----- */
+
+.hlavicka {
+    background-image: linear-gradient(to right, #25133d 25%, #aa5477 100%);
+    color: white;
+    height: 250px;
+}
+
+.hlavni--nadpis {
+    font-weight: 700; 
+    font-size: xx-large;
+    padding-left: 15px;
+    padding-top: 15px;
+    
+}
+
+.slogan {
+    font-weight: 300; 
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.navigace {
+    display: inline-flex;
+    justify-content: space-around;
+     padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.navigace li {
+    display: inline-block;
+    text-decoration: none;
+    color: #48418e;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.navigace a {
+    text-decoration: none;
+    color: currentColor;    
+}
+
+.tlacitka--seznam a {
+    text-decoration: none;
+    color: currentColor;
+    
+    text-align: center;
+}
+
+.navigace li:first-child {
+    font-weight: 700;
+}
+
+.navigace li:hover {
+   background-color: #48418e;
+   color: white;
+}
+
+.capitalky {
+    text-transform:uppercase;
+}
+
+/*
+margin-left: -25px;
+padding-left: 15px;
+*/
+  
+
+.tlacitka li {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    min-width: 185px;
+    text-align: center;
+    font-weight: small;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+}
+
+
+.tlacitka li:hover,
+.tlacitka li:focus,
+.tlacitka li:active {
+    background-color: #48418e;
+    
+}
+
+.tlacitka--seznam {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    align-items: center;
+    margin-left: -40px;    
+    justify-content: space-evenly;
+}
+
+
+p {
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+h2 {
+    text-align: center;
+    color: #48418e;
+    font-size: 700;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.cestujposvete,
+.chatujsprateli,
+.zazijdobrodruzstvi {
+    text-align: center;
+}
+
+.sluzby img {
+    width: 75px;
+}
+
+.paticka {
+    color: white;
+    text-align: center;
+    background-color: #48418e ;
+}
+
+
+@media screen and (min-width: 400px) {
+    .tlacitka--seznam {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-left: 0;    
+        justify-content: space-evenly;
+        padding-left: 0;
+    }
+  
+    .hlavicka {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .navigace li {
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 800px) { 
+    
+    .navigace li {
+        width: auto;
+    }
+
+    .tlacitka--seznam {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: -20px;
+        padding-left: 0;
+    }
+
+    .tlacitka li {
+        margin-left: 40px;
+    }
+ 
+    .sluzby {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .sluzby div {
+        margin: 0 10px;
+    }
+
+    .sluzby h2 {
+        font-size: auto;
+    }
+
+    .hlavicka {
+        height: 300px;
+        background-image: url('telefon.png'), linear-gradient(to right, #25133d, #aa5477);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+    } 
+
+   
+@media screen and (min-width: 750px) {
+    .navigace li {
+        width: auto;
+    }
+
+    .tlacitka--seznam {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: -20px;
+        padding-left: 0;
+    }
+
+    .tlacitka li {
+        margin-left: 40px;
+    }
+  
+    .hlavicka {
+        height: 200px;
+        background-image: url('telefon.png'), linear-gradient(to right, #25133d, #aa5477);
+    } 
+
+    .sluzby {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .sluzby div {
+        margin: 1rem 0;
+    }
+}

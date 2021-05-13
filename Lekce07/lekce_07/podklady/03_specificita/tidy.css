@@ -1,0 +1,17 @@
+* {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+h1 {
+    color: lime;
+}
+
+
+.list.list-item ol li {
+    background-color: #fff;
+}
+
+.tip {
+    background-color: #fff;
+}

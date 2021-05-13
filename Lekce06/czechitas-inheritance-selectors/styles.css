@@ -1,0 +1,25 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html {
+    box-sizing: border-box;
+}
+
+*,
+:after,
+:before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: sans-serif;
+    color: hsl(79, 50%, 30%)
+}
+
+ul {
+    width: 50%;
+    border-left: 1px solid hsl(300, 50%, 50%);
+}
+
+/* Simulace toho, kdy by se dědily všecky vlastnosti. */
+/* ul * {
+    all: inherit
+} */

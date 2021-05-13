@@ -1,0 +1,67 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+*, :after, :before { box-sizing: border-box; }
+
+body {
+    font: 16px/1.5 sans-serif;
+}
+
+.kontejner {
+    width: 100%;
+    background-color: #7B1FA2;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.5);
+    padding: 20px;
+}
+
+.polozka {
+    font: 30px/1 sans-serif;
+    font-weight: bold;
+    background-color: #FF9800;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.5);
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #111;
+}
+
+.polozka p {
+    color: #eee;
+}
+
+/* ---------------------------------------------------- */
+
+.kontejner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.polozka {
+    flex-basis: 100px;  
+    flex-shrink: 0;
+    flex-grow: 1;
+    order: 200;
+}
+
+.dvojka {
+    order: 1;
+}
+
+.sestka {
+    order: 5;
+}
+
+.devitka {
+    order: -1;
+}
+/*
+.jednicka {
+    flex-grow: 1;
+}
+
+.dvojka {
+    flex: 1 0 auto;
+    border: 1px solid white
+    }
+*/

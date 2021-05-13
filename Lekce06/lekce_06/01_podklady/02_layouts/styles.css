@@ -1,0 +1,103 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+*, :after, :before { box-sizing: border-box; }
+
+body, html {
+    font: 16px/1.5 sans-serif;
+    margin: 0;
+}
+
+.kontejner {
+    width: 100vw;
+    height: 100vh;
+    background-color: #eee;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    align-items: stretch;
+}
+
+section, main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.menu {
+    background-color: #322b50;
+    color: #eee;
+}
+
+main {
+    background-color: #bcbcbd;
+    flex: 2;
+}
+
+.banner {
+    background-color: #e2027d;
+    color: #eee;
+}
+
+/* 1. fixed layout */
+
+.kontejner.fixed {
+    justify-content: center;
+}
+
+.menu.fixed {
+    flex: 0 0 300px;
+}
+
+main.fixed {
+    flex: 0 0 600px;
+}
+
+.banner.fixed {
+    flex: 0 0 300px;
+}
+
+/* 2. fluid layout */
+
+.menu.fluid {
+    flex: 0 0 20%;
+}
+
+main.fluid {
+    flex: 0 0 60%;
+}
+
+.banner.fluid {
+    flex: 0 0 20%;
+}
+
+/* 3. adaptive layout */
+
+.kontejner.adaptive {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .kontejner.adaptive {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .kontejner.adaptive {
+        max-width: 300px;
+        flex-direction: column;
+    }
+}
+
+/* 4. responsive layout */
+
+@media screen and (max-width: 800px) {
+    .kontejner.responsive {
+        flex-direction: column;
+    }
+
+    main.responsive {
+        flex-grow: 5;
+    }
+}

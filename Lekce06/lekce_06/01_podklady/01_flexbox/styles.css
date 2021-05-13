@@ -1,0 +1,74 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+*, :after, :before { box-sizing: border-box; }
+
+body {
+    font: 16px/1.5 sans-serif;
+}
+
+.kontejner {
+    width: 100%;
+    background-color: #7B1FA2;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.5);
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+}
+
+.polozka {
+    font: 30px/1 sans-serif;
+    font-weight: bold;
+    background-color: #FF9800;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.5);
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #111;
+}
+
+.polozka p {
+    color: #eee;
+}
+
+/* ---------------------------------------------------- */
+
+/*1. align-items 
+
+.kontejner {
+    flex-direction: column;
+    height: 800px;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.polozka {
+    width: 100px;
+}
+
+
+
+/* 2. align-self 
+
+.trojka {
+    align-self: flex-end;
+}
+
+*/
+
+/* 3. flex-basis (row/column) */
+
+.kontejner {
+    flex-direction: column;
+}
+
+.polozka {
+    flex-basis: 150px;
+}
+
+
+
+
+
+

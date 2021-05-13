@@ -1,0 +1,145 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+body {
+    text-rendering: optimizeLegibility;
+    margin-left: 100px;
+    background-color: #f5f5f5;
+}
+
+/*
+ BARVY
+ svetle sede pozadi      #f5f5f5
+ tmavsi seda             #959595
+ barevny prechod nahore  #06d7c1
+ barevny prechod dole    #50cc49
+ zelena cara             #06d7c1
+ oranzova                #f15f42
+
+ PISMO
+ Rubik - pouzite rezy pisma regular 400 a medium 500
+ https://fonts.google.com/specimen/Rubik
+*/
+
+/* ----- zde zacni psat vlastni css ----- */
+
+.zbozi {
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+    width: 670px;
+    height: 440px;
+}
+
+.vizual {
+    background: linear-gradient(#06d7c1,#50cc49);
+    border-radius: 10px 0 0 10px;
+    padding: 30px;
+    position: relative;
+    width: 335px;
+}
+
+.bota {
+    margin-left: -110px;
+}
+
+.slogan {
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.cenovka {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    text-align: right;
+}
+
+.cena{
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+}
+
+.zaruka {
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+}
+
+.detaily {
+    padding: 0 30px 30px 30px;
+    border-radius: 0 10px 10px 0;
+    background-color: ivory;
+    position: relative;
+}
+
+.nazev {
+    text-transform:uppercase;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.produkt {
+    font-size: 14px;
+    color: #959595;
+}
+
+.popis {
+    font-size: 14px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 1.5px solid #06d7c1;
+}
+
+.parametr {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+.velikosti {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -40px;
+}
+
+.velikosti li {  
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    padding: 3px;
+}
+
+.vybrana {
+    color: #f15f42;
+    border: solid 1px #f15f42;
+    border-radius: 50%;
+}
+
+.tlacitko {
+    display: block;
+    text-decoration: none;
+    background-color: #f15f42;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
+}
+
+.akce {
+    margin-top: 50px;
+    position: absolute;
+}
+
+.velikosti li:hover,
+.velikosti li:focus {
+    border:1px solid #f15f42;
+    border-radius: 50%;
+    background-color:  #f15f42;
+}
+
