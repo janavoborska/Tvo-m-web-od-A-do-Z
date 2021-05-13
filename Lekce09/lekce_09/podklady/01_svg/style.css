@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+}
+
+.icon {
+    width: 20%;
+}
+
+.icon:hover .icon-plane {
+    fill: pink;
+    transform: rotate(135deg);
+    transform-origin: center;
+    transition: transform 1s;
+}
+
+
+.heading {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    border-bottom: 2px solid currentColor;
+    color: pink;
+}

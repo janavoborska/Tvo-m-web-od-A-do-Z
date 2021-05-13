@@ -1,0 +1,35 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+*, :after, :before { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font: 16px/1.5 sans-serif;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: #FEFEFE;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.left {
+    background-color: #CDDC39;
+}
+
+.center {
+    background-color: #FFEB3B;
+}
+
+.right {
+   background-color: #FFC107; 
+}
+
+/*--------------------------------------------*/
+
+div {
+    margin: 1em;
+    width: calc(100% / 3 - (2 * 1em));
+    height: calc(100% - (2 * 1em));
+}

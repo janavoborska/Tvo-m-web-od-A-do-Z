@@ -1,0 +1,39 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+*, :after, :before { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font: 16px/1.5 sans-serif;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: #FEFEFE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    display: flex;
+    font-size: 2rem;
+}
+
+p {
+    margin: auto 5px;
+}
+
+/*------------------------------------------------*/
+
+div::before {
+    content: "Toto je";
+    color: red;
+}
+
+div::after {
+    content: "s přidaným koncem.";
+    color: purple;
+}
+
+
+

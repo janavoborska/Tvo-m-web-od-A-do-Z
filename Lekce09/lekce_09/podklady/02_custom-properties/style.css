@@ -1,0 +1,127 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/*
+    background image: https://picsum.photos/1200/300
+    --primary: hsla(160, 50%, 50%, 1);
+    --primary-light: hsla(160, 50%, 70%, 1)
+    --primary-lighter: hsla(160, 50%, 70%, 0.4)
+    --primary-dark hsla(160, 85%, 15%, 1)
+*/
+
+:root {
+    --primary: hsla(160, 50%, 50%, 1);
+    --primary-light: hsla(160, 50%, 70%, 1);
+    --primary-lighter: hsla(160, 50%, 70%, 0.4);
+    --primary-dark: hsla(160, 85%, 15%, 1);
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: var(--primary-lighter);
+    color: var(--primary-dark);
+}
+
+header {
+    min-height: 300px;
+    padding: 3rem;
+    background-image: url('https://picsum.photos/1200/300');
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    max-width: 60em;
+    padding: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+main>img {
+    display: block;
+    margin: 1rem auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: serif;
+    text-shadow: 0 0 3px var(--primary-dark);;
+    color:  var(--primary);
+}
+
+h2,
+h3 {
+    clear: left;
+    clear: both;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+nav a {
+    padding: 0.5rem 1rem;
+    border: 3px solid currentColor;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    color: hsla(160, 85%, 15%, 1);
+    background-color: var(--primary-light);
+}
+
+nav a:hover,
+nav a:focus {
+    color: #fff;
+    transition: 150ms;
+    outline: none;
+    background-color: hsla(160, 50%, 50%, 1);
+}
+
+section {
+    display: flow-root;
+    border-bottom: 1px dotted currentColor;
+    padding: 0 1rem;
+    margin: 0 -1rem;
+    text-align: left;
+    background-color: hsla(160, 50%, 70%, 1);
+}
+
+section:last-child {
+    border: 0;
+}
+
+section img {
+    float: right;
+    margin-bottom: 1em;
+    width: 150px;
+    height: auto;
+}
+
+section:nth-child(odd) img {
+    float: left;
+    margin-right: 1em;
+}
+
+section:nth-child(even) img {
+    margin-left: 1rem;
+}
+
+img {
+    max-width: 100%;
+}

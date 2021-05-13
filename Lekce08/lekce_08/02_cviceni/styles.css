@@ -1,0 +1,77 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+*, :after, :before { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font: 16px/1.5 sans-serif;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: #FEFEFE;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 60px;
+    position: relative;
+    background-color: lightgreen;
+}
+
+ul::before, ul::after {
+    position: absolute;
+    transform: rotate(-90deg);
+    width: 275px;
+    text-align: center;
+    font-weight: bold;
+    top: 120px;
+    letter-spacing: 5px;
+    font-size: 24px;
+}
+
+ul::before {
+    content: "START";
+    right: -100px;
+    border-top: 2px solid red;
+}
+
+ul::after {
+    content: "FINISH";
+    left: -50px;
+    border-bottom: 2px solid red;
+}
+
+li {
+    font-size: 40px;
+    line-height: 1.4;
+    margin-left: 100%;
+}
+
+li::before {
+    content: '🐎';
+}
+
+/*----------------------------------------*/
+
+/*
+
+Vítejte na dostihové dráze! Závodiště v Chuchli je kvůli epidemii zavřené, koně fungují jen online.
+
+Aktuálně jsou všichni závodníci - pět koní - na startu. Cílem je vylepšit situaci tak, aby bylo možné závody uspořádat.
+
+Závodníci jsou na startu proto, že mají margin-left: 100%. Před závodem samotným ověřte, že se posunou do cíle, když budou mít margin-left: 0.
+
+Závodit se začne tak, že posuneme kurzor myši nad závodiště. Přidejte CSS tak, aby se všichni závodníci dostali do cíle, když bude myš nad prvkem <ul>.
+
+Jelikož se jedná o online závodění, nahradíme posledního koně pomocí `content: '🦄';` za jednorožce, takže máme - čtyři koně a jednoho jednorožce.
+
+Pokud se má CSS vlastnost margin-left měnit plynule, musíme ji zmínit ve vlastnosti transition. Nechte závodníkům měnit margin-left plynule v průběhu tří vteřin.
+
+Každý kůň má jinou dynamiku běhu! Ať druhý kůň používá lineární průběh a třetí kůň třeba ease-in.
+
+Jednorožec je kouzelný! Do cíle se umí rovnou teleportovat, ale vždy se zpožděním dvou vteřin.
+
+*/
+
+

@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: silver;
+}
+
+.icon {
+    width: 20vw;
+}
+
+.icon:hover .icon-plane {
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+
+}
+
+.icon-plane {
+
+}
+
+
+@keyframes spin {
+    from {
+        transform: scale(0.5);
+    }
+
+    to {
+        transform: scale(1.5);
+    }
+}
