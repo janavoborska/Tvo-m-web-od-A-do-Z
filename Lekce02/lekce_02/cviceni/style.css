@@ -1,0 +1,80 @@
+html {
+    box-sizing: border-box;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav ul {
+    padding-left: 0;
+    text-align: center;
+}
+
+header {
+    min-height: 300px;
+    padding: 2rem 3rem;
+    background-image: url('https://picsum.photos/1200/300');
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+body {
+    margin: 0 auto;
+    font-family: sans-serif;
+    max-width: 50rem;
+}
+
+section {
+background-color: hsla(160, 50%, 50%, 0.6);
+padding: 1rem;
+margin-left: -1rem;
+margin-right: -1rem;
+border-bottom: 1px dotted hsla(160, 50%,10%,1);
+display: flow-root;
+}
+
+main > img {
+    max-width: 100%;
+    height: auto;  
+}
+
+main {
+    padding: 1rem;
+}
+
+section > img {
+    width: 100px;
+    height: auto;
+    float: left;
+    margin-right: 1rem;
+}
+
+
+h3 {
+    clear: both;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+
+/*
+Omez šířku obrázkům uvnitř `section` na 175 pixelů. Ale zachovej poměr stran.
+Přidej section spodní ohrančení, které bude tečkované a v tmavé  barvě: hsla(160, 50%,10%,1)
+
+Omez šířku stránky a vycentruj ji.
+Prveku main nastav padding.
+Podbarvi všechny section touto barvou: hsla(160, 50%, 50%, 0.6); Přidej jim padding.
+
+    background image: https://picsum.photos/1200/300
+    primary color: hsla(160, 50%, 50%, 1);
+
+*/

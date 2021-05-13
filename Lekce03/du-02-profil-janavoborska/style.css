@@ -1,0 +1,174 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+/*
+ BARVY
+ czechitas  #b92e81
+ pozadi     #bdc3c7
+ tmava      #31363b
+ delitka    #3f464d
+ portfolio  #e74c3c
+ facebook   #3b5998
+ twitter    #1da1f2
+*/
+/*.obdelnik {
+    width: 300px;
+    height: 200px;
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+*/
+
+body {
+    background-color: white;
+   width: 250px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3rem;
+    
+}
+
+
+.hlavicka {
+    width: 250px;
+}
+
+.foto {
+    width: 100%;
+    height: auto;
+    position: relative;
+    opacity: 99%;
+    display: block;
+}
+
+.logo {
+        background-color: #b92e81;
+        border-radius: 50%;
+        position: absolute;
+        left: 110px;
+        top: 70px;
+}    
+    
+.h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.jmeno {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+}
+
+.p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.odkazy {
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.odkazy a {
+    display: block;
+    color: whitesmoke;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+ .obsah {
+    background-color: #31363b;
+    color: whitesmoke;
+    font-family:'Source Sans Pro';
+    padding: 1rem 1rem 1rem 1rem;
+    font-size: 0.9rem;
+    margin: 0;
+    margin-bottom: 0;
+    width: 250px;
+}
+
+.profil {
+    background-color: #31363b;
+}
+
+.portfolio {
+    width: 100%;
+    }
+
+.portfolio a:hover {
+    background-color: #e74c3c;
+}
+
+.facebook a:hover {
+    background-color: #3b5998;
+}
+
+.twitter:hover {
+    background-color:  #1da1f2;
+}
+
+.odkazy li {
+    display: inline-block;
+}
+ 
+
+.facebook,
+.twitter {
+    width: 50%;
+}
+
+.twitter {
+    float: right;
+}
+/* s timto si nevim rady
+
+ 
+.odkazy {
+    background-color: #31363b;
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0;
+    width: 250px;
+    list list-style: none;
+}
+
+.portfolio {
+    display: inline-block;
+    text-align: center;
+    padding-left: -2rem;
+    border: 0.1rem solid whitesmoke;
+}    
+
+.facebook,
+.twitter {
+    display: inline-block;
+    border: 0.01rem solid whitesmoke;
+}
+
+
+.li {
+    text-align: center;
+    color: whitesmoke; 
+}
+
+
+.facebook,
+.twitter {
+    display: inline-block;
+    color: whitesmoke;
+    border-left: solid  whitesmoke 0.05rem;
+    background-color: #31363b;
+    margin: 0;
+}
+
+.facebook a:hover,
+.facebook a:focus,
+.facebook a:active {
+    background-color: #3b5998;
+}
+*/ 
